@@ -7,8 +7,7 @@ public class DuplicatesInArray {
 	public static void main(String[] args) {
 		
 		//int a[] = {2,3,4,3,5,1,2};
-		int a[] = new int[7];
-		
+		int a[] = new int[7];		
 		Scanner sc = new Scanner(System.in); 
 		System.out.println("enter any 7 element");
 		
