@@ -9,7 +9,7 @@ public class Practice {
 		String str  = "Sudarshan";
 		String Rstr = " ";
 		char ch;
-		
+		//String
 		for(int i = 0 ; i < str.length(); i++) {
 			ch = str.charAt(i);
 			Rstr = ch + Rstr ; 
