@@ -16,7 +16,7 @@ public class Practice {
 			Rstr = ch + Rstr ; 
 		}
 		System.out.println(Rstr);
-		
+		//
 	}
         }
 		
