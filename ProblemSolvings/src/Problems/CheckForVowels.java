@@ -2,6 +2,11 @@ package Problems;
 import java.util.*;
 
 public class CheckForVowels {
+	
+	public static boolean isVowel(char ch) {
+		ch = Character.toLowerCase(ch);		
+		return ch =='a'|| ch == 'e'||ch =='i'|| ch =='o'|| ch =='u';
+	}
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -10,15 +15,14 @@ public class CheckForVowels {
 		Scanner sc = new Scanner(System.in);
 		ch = sc.next().charAt(0);
 		
-		if(ch=='a'|| ch == 'e'||ch =='i'|| ch =='o'|| ch =='u')
+		if(isVowel(ch))
 		{
 			System.out.println("vowels");
 		}
 		else
 		{
 			System.out.println("consonent");
-		}
-
+		}      
+		
 	}
-
 }
