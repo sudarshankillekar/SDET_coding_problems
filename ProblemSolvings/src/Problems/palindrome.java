@@ -6,7 +6,7 @@ public class palindrome {
 	public static void main(String[] args) {
 	String s = new String();
 	Scanner sc = new Scanner(System.in);
-	System.out.println("enter an number to check for palidrome");
+	System.out.println("enter an name to check for palidrome");
 	s = sc.nextLine();
 	int i , j, flag =0;
 	i=0;
