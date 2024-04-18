@@ -6,7 +6,6 @@ public class findTheLargestElementIntheArray {
 		// TODO Auto-generated method stub
 		int a[] = new int [5];
 		int max;
-		int min;
 		
 		Scanner sc = new Scanner(System.in); 
 		System.out.println("enter any 5 element");
@@ -16,21 +15,16 @@ public class findTheLargestElementIntheArray {
 		}
 		
 		max = a[0];
-		min = a[0];
 		
 		for (int i = 1; i<5; i++) {
-			if(a[i] > max || a[i]<min) {
+			if(a[i] > max) {
 				
 				max = a[i];
-				min = a[i];
 			}
-			
-			
 			
 					
 		}
-		System.out.println(max+ " Is the heighest element in the array");
-		System.out.println(min+ " Is the lowest element in the array");
+		System.out.println(max+ "Is the heighest element in the array");
 	}
 
 }
