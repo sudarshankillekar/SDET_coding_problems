@@ -3,7 +3,7 @@ package Problems;
 public class reversestring {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		String str = "Sudarshan";
+		String str = "Sudarshan is a boy";
 		String rstr = "";
 		char ch;
 
