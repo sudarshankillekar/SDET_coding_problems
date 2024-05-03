@@ -4,7 +4,7 @@ public class reverseWordsinString {
     
 	public static void main(String[] Args ) {
 		
-	 System.out.println(reverseWords("the sky is blue"));	
+	 System.out.println(reverseWords("  the sky  is blue  "));	
 	}
 	
 	static String reverseWords(String s) {
