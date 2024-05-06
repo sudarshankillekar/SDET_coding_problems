@@ -6,15 +6,15 @@ public class TwoSum {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		
-		int[] nums = {2,7,11,15};
-        System.out.println(Arrays.toString(twoSum(nums,9)));
+		int[] nums = {3,3};
+        System.out.println(Arrays.toString(twoSum(nums,6)));
+	
 	}
-    
 	public static int[] twoSum(int [] nums,int target) {
 		
 	HashMap <Integer, Integer> hm = new HashMap<Integer, Integer>();
 	
-	for (int i = 0; i<nums.length-1;i++) {
+	for (int i = 0; i<nums.length;i++) {
 	     int required_Num = target - nums[i];
 	     if (hm.containsKey(required_Num)) 
 	     {
@@ -24,7 +24,5 @@ public class TwoSum {
 	     hm.put(nums[i], i);
 	     }
 	    return null;
-	
-
-}
+	}	
 }

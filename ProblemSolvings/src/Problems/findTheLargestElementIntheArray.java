@@ -23,7 +23,7 @@ public class findTheLargestElementIntheArray {
 			}
 			
 		}
-		System.out.println(max+ "Is the largest element in the array");
+		System.out.println(max+ " Is the largest element in the array");
 		int min = a[0];	
 		
 		for (int i = 1; i<5; i++) {

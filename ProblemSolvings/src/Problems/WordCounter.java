@@ -4,7 +4,7 @@ import java.util.HashMap;
 
 public class WordCounter {
     public static void main(String[] args) {
-        String text = "I love Java programming. Java is fun and Java is powerful.";
+        String text = "I love Java programming. Java is fun and Java is powerful." ;
         String[] words = text.split(" ");
         HashMap<String, Integer> wordCount = new HashMap<>();
 

@@ -17,11 +17,11 @@ public class CheckForVowels {
 		
 		if(isVowel(ch))
 		{
-			System.out.println("vowels");
+			System.out.println(ch+" is vowel");
 		}
 		else
 		{
-			System.out.println("consonent");
+			System.out.println(ch+" is consonent");
 		}      
 		
 	}
