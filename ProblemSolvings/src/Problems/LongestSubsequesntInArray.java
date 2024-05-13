@@ -45,6 +45,7 @@ public class LongestSubsequesntInArray {
 	for (int i = msp; i < msp + ml; i++) {
 		
 		 System.out.print(i + " ");
+//		 test	
      }
 }
 }
