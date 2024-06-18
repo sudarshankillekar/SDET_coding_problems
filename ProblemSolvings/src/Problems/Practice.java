@@ -6,20 +6,17 @@ public class Practice {
 
 	
 		public static void main(String[] args) {
-			
-			String str = "sudarshan";
-			String rstr = " ";
-			char ch ;
-			
-			for(int i = 0 ; i<str.length();i++) {
-				ch = str.charAt(i);
-				rstr = ch+rstr ;
-			}
-			
-			System.out.println(rstr);
-			
-			
-			
+	    int a[] = new int[7];		
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter any 7 digits");
+	    
+		for(int i = 0; i<7;i++) {
+			a[i] = sc.nextInt();
+		}
+		
+		//for(int i )
+		
+		
 		}
 
 }
