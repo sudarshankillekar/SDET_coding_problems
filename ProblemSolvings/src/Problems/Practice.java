@@ -7,25 +7,23 @@ public class Practice {
 	
 	
 
-		public static void main (String[] args){
-
-		int a[] = new int[7];
-		Scanner sc = new Scanner(System.in);
-		System.out.println("enter any 7 digits");
-
-		for(int i =0;i<7;i++){
-		a[i] = sc.nextInt();
-		}
-
-		for(int i = 0;i<a.length;i++){
-		   for(int j = i+1;j<a.length;j++){
-		     if(a[i] == a[j] ){
-		     System.out.println(a[i]+" is an duplicate element");
-		}
-		}
-		
-		}
-
-		}
+//		public static void main (String[] args){
+//
+//		int a[] = new int[5];
+//		Scanner sc = new Scanner(System.in);
+//		System.out.println("enter any 5 digits");
+//		
+//		for(int i = 0;i<5;i++) {
+//			a[i] = sc.nextInt();
+//		}
+//	    
+//		int max = a[0]; 
+//		for(int i = 1; i<5 ; i++) {
+//			if(a[i] > max) {
+//				max = a[i];
+//			}
+//		}
+//		System.out.println(max);
 }
 
+}
