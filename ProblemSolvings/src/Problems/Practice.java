@@ -4,31 +4,25 @@ import java.util.*;
 
 public class Practice {
 
+	public static void main(String[] args) {
 	
-	
+	String Text  = "Sudarshan is an good person , Sudarshan has powerfull will to do anything";
 
-	public static boolean IsVowel(char ch){
+	String words [] = Text.split(" ");
 
-		ch = Character.toLowerCase(ch);
-		return ch ==  'a' || ch == 'e' ||ch == 'i' ||ch == 'o' ||ch == 'u';
-		 
-		}
+	HashMap <String ,Integer> WordCount = new HashMap<String,Integer>();
 
-		public static void main(String[] args){
+	for(String word : words){
 
-		char ch ;
-		System.out.println("enter any character to check for vowel");
-		Scanner sc = new Scanner(System.in);
-
-		ch  = sc.next().charAt(0);
-
-		if(IsVowel(ch)){
-		System.out.println(ch+" is vowel");
-		}
-		else
-		{
-		System.out.println(ch+" is an consonant");
-		}
-
+	if(WordCount.containsKey(word)){
+	WordCount.put(word,WordCount.get(word)+1);
+	}
+	else{
+	WordCount.put(word,1);
+	}
+	}
+	for(String word : WordCount.keySet()){
+	System.out.println("Word \"" + word + "\" occurs " + WordCount.get(word) + " time(s)");
+	}
 }
-}
+	}
