@@ -1,6 +1,8 @@
 package Problems;
 import java.util.Arrays;
 import java.util.HashMap;
+
+//youtube video link to solve the problem  https://www.youtube.com/watch?v=pyt-RGt7slA&t=423s
 public class TwoSum {
 
 	public static void main(String[] args) {
