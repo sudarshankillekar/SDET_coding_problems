@@ -19,7 +19,7 @@ public class printPairWithGivenSum {
     // Driver Code
     public static void main(String[] arg)
     {
-        int arr[] = {1,3,2,2,5,6};
+        int arr[] = {1,3,2,2,5,6,-1};
         int n = arr.length;
         int sum = 4;
         printPairs(arr, n, sum);

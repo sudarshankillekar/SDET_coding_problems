@@ -4,30 +4,22 @@ import java.util.*;
 
 public class Practice {
 
-		public static void main(String[]  args){
+	static void printpairlogic(int arr[] , int n , int sum ){
 
-		int [] nums = {3,3};
+		for(int i = 0 ; i < n ; i++)
+		   for(int j = i+1; j<n ;j++)
+		   if(arr[i] + arr[j] == sum)
+		   System.out.println("("+arr[i]+","+arr[j]+")");
+		   
+		   
+	}
+		
+		public static void main(String[] args){
 
-		System.out.println(Arrays.toString(driverCode(nums,6)));
-
+		int arr [] = {1,3,2,2,5,6};
+	    int	n = arr.length;
+		int sum = 4;
+		printpairlogic(arr,n,sum);
 		}
-	
-		public static int[] driverCode(int [] nums , int target) {
-
-		HashMap <Integer ,Integer> hm = new HashMap<>();
-
-		for(int i = 0 ; i < nums.length;i++ ){
-
-		int req_num = target - nums[i];
-
-		if(hm.containsKey(req_num)){
-		int[] arr = {hm.get(req_num),i};
-		return arr;
-		}
-		else
-		hm.put(nums[i],i);
-		} 
-		return null;
-		}		
 		
 }
