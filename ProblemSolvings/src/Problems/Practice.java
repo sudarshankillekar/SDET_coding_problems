@@ -4,22 +4,26 @@ import java.util.*;
 
 public class Practice {
 
-	static void printpairlogic(int arr[] , int n , int sum ){
-
-		for(int i = 0 ; i < n ; i++)
-		   for(int j = i+1; j<n ;j++)
-		   if(arr[i] + arr[j] == sum)
-		   System.out.println("("+arr[i]+","+arr[j]+")");
-		   
-		   
+	public static void main(String[] args) {
+		
+	String text = "Hi , am sudarshan , sudarshan is rahul's friend";
+	String [] words  = text.split(" ");
+	
+	HashMap <String ,Integer> WordCounter = new HashMap <String,Integer>();
+	
+	for(String word : words) {
+		if(WordCounter.containsKey(word)) {
+			WordCounter.put(word, WordCounter.get(word)+1);
+		}
+		else {
+			WordCounter.put(word, 1);
+		}
 	}
 		
-		public static void main(String[] args){
-
-		int arr [] = {1,3,2,2,5,6};
-	    int	n = arr.length;
-		int sum = 4;
-		printpairlogic(arr,n,sum);
-		}
+	for(String word : WordCounter.keySet()) {
+		System.out.println("Word \"" + word + "\" occurs " + WordCounter.get(word) + " time(s)");
+	}
+	
+	}
 		
 }
