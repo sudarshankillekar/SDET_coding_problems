@@ -3,31 +3,28 @@ package Problems;
 import java.util.*;
 
 public class Practice {
-		
+	
 	public static void main(String[] args){
 
-		int[] nums = {3,3,5,5} ;
-		System.out.println(Arrays.toString(twoSum(nums,10)));
+		String s  = "dad";
 
+		int i ,j ,flag = 0;
+
+		i = 0;
+		j = s.length()-1;
+
+		while(i<j&&flag == 0){
+		if(s.charAt(i)!=s.charAt(j))
+		flag = 1;
+		break;
 		}
 
-		static int [] twoSum(int [] nums , int target){
-
-		HashMap<Integer, Integer> hm = new HashMap<Integer, Integer>();
-
-		for(int i = 0 ; i<nums.length;i++){
-
-		int requ_num = target - nums[i];
-
-		if(hm.containsKey(requ_num)){
-		 int [] arr = {hm.get(requ_num),i};
-		 return arr;
-		}
+		if(flag == 0)
+		System.out.println("palindrome");
 		else
-		{
-		hm.put(nums[i],i);
+		System.out.println("not palindrome");
 		}
-		}
-		return null;
-		}
-}
+	}
+
+
+	
