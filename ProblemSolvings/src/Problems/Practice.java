@@ -4,24 +4,30 @@ import java.util.*;
 
 public class Practice {
 		
-		public static void main(String[] args){
+	public static void main(String[] args){
 
-			System.out.println(reverse(" the sky  is blue  "));
+		int[] nums = {3,3,5,5} ;
+		System.out.println(Arrays.toString(twoSum(nums,10)));
 
-			} 
+		}
 
-			static String reverse(String s){
+		static int [] twoSum(int [] nums , int target){
 
-			String [] words = s.split(" +");
-			StringBuilder sb  = new StringBuilder();
+		HashMap<Integer, Integer> hm = new HashMap<Integer, Integer>();
 
-			for(int i = words.length-1; i>=0;i--){
+		for(int i = 0 ; i<nums.length;i++){
 
-			sb.append(words[i]);
-			sb.append(" ");
+		int requ_num = target - nums[i];
 
-			}
-			return sb.toString().trim();
-			}
-		
+		if(hm.containsKey(requ_num)){
+		 int [] arr = {hm.get(requ_num),i};
+		 return arr;
+		}
+		else
+		{
+		hm.put(nums[i],i);
+		}
+		}
+		return null;
+		}
 }
