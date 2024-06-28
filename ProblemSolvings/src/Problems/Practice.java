@@ -4,27 +4,45 @@ import java.util.*;
 
 public class Practice {
 	
-	public static void main(String[] args){
+	static void logicForReversing(int [] arr ,int start , int end){
 
-		String s  = "dad";
+		while(start<end){
 
-		int i ,j ,flag = 0;
+		int temp ;
 
-		i = 0;
-		j = s.length()-1;
+	    temp = arr[start];
+		arr[start] = arr[end];
+		arr[end] = temp;
 
-		while(i<j&&flag == 0){
-		if(s.charAt(i)!=s.charAt(j))
-		flag = 1;
-		break;
-		}
+		start++;
+		end--;
 
-		if(flag == 0)
-		System.out.println("palindrome");
-		else
-		System.out.println("not palindrome");
 		}
 	}
+		static void printarray(int [] arr,int size){
+
+		for(int i = 0 ; i<size ; i++){
+		 System.out.print(arr[i]+" ");
+		 System.out.println(); 
+		}
+
+		}
+
+		public static void main(String args[]){
+
+		int [] arr = {1,2,3,4,5,6};
+		printarray(arr,5);
+		logicForReversing(arr,0,5);
+		System.out.print("Reveresearray");
+		printarray(arr,6);
+		}
+
+		}
+		
+		
+		
+		
+	
 
 
 	
