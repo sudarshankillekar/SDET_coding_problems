@@ -4,36 +4,52 @@ import java.util.*;
 
 public class Practice {
 	
-	public static void main (String[] args) {
+	public static void main(String[] args) {
 		
-	String Text = "GeeksforGeeks";
-	char [] words = Text.toCharArray();
+	int[] arr = {99,98,17,9,2,100,5,101};
 	
-	HashMap <Character , Integer> wordcounter  = new HashMap<>(); 
-		
-	for(Character ch : words) {
-		if(wordcounter.containsKey(ch)) {
-			wordcounter.put(ch, wordcounter.get(ch)+1);
-		}else
-		{
-			wordcounter.put(ch, 1);
+	HashMap<Integer , Boolean> Map = new HashMap<>() ;
+	
+	for(Integer val : arr) {
+		Map.put(val, true);	 		
+	}
+	
+	for(Integer val : arr) {
+		if(Map.containsKey(val - 1)) {
+			Map.put(val, false);
 		}
+	}
+	
+	
+	int ml = 0;
+	int msp = 0;
+	for(Integer val : arr) {
+		if(Map.get(val) == true) {
+			int tl  = 0;
+			int tsp = val;
 		
-	}
-		for(Character word : wordcounter.keySet()) {
-			if(wordcounter.get(word)>1);
-			System.out.println("Duplicate word "+ word+" number of times repeated "+ wordcounter.get(word));
-		}
+	 while(Map.containsKey(tl+tsp)) {
+		 tl++;
+	 }
+	 
+	 if(tl>ml) {
+		 ml = tl;
+		 msp = tsp;
 		
+	 }	 
+	}	
+}	
+	 System.out.println("Maximum length is " +ml);
+	 for(int i = msp ;i<ml+msp;i++) {
+		 System.out.print(i+" ");
+	 }
 	}
-			
 	
-	
-	}
-	
-	
+}
+		
 
-		
+
+
 		
 		
 		
