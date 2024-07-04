@@ -15,7 +15,7 @@ public class leftrotateArray {
 	array[array.length-1] = temp;
 	
 	for(int i: array) {
-		System.out.print(i + " ");
+		System.out.print(i+" " );
 	}
 	}
 
