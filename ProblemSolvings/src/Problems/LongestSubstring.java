@@ -4,12 +4,11 @@ import java.util.*;
 public class LongestSubstring {
 
 	 public static void main(String[] args) {
-	        String s = "yourteststring";
-	        LongestSubstring obj = new LongestSubstring();
-	        System.out.println("Length of the longest substring: " + obj.lengthOfTheLongestSubstring(s));
+	        String s = "abcralmn";
+	        System.out.println(lengthOfTheLongestSubstring(s));
 	    }
 
-	    public String lengthOfTheLongestSubstring(String s) {
+	    public static  String lengthOfTheLongestSubstring(String s) {
 	        HashMap<Character, Integer> map = new HashMap<>();
 
 	        int start = 0;
