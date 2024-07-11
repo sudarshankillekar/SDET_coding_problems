@@ -14,7 +14,7 @@ public class FactorialOfNumber {
 		
 		System.out.println(factorial);
 		
-		
+	//	
 	}
 
 }
