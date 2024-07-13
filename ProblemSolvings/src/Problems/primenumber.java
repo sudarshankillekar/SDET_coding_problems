@@ -23,7 +23,7 @@ public class primenumber {
 		else {
 			System.out.println("Not an prime number");
 		}
-
+//tesr
 	}
 
 }
