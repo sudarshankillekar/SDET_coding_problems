@@ -10,18 +10,21 @@ public class Practice {
 		int [] a = new int [5];
 		Scanner sc = new Scanner(System.in);
 		
-		for(int i = 0 ; i<a.length;i++) {
+		for(int i = 0 ; i<5;i++) {
 			a[i] = sc.nextInt();
 		}
 		
-		for(int i = 0 ; i <a.length ; i++) {
-			for(int j = i+1 ; j<a.length;j++) {
-				if(a[i] == a[j]) {
-					System.out.println(a[i]+"is an duplicate element in an array");
-				}
+		int max = a[0];
+		
+		for(int i = 1 ; i<5;i++) {
+			if(a[i]>max) {
+				max = a[i];
 			}
+			
 		}
-	
+		
+		System.out.println(max+"is the largest element in the array");
+		
 	}
 }
 		
