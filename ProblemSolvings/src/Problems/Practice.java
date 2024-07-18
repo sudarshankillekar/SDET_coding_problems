@@ -4,21 +4,22 @@ import java.util.*;
 
 public class Practice {
 	
+	public static boolean isVowel(char ch) {
+		ch = Character.toLowerCase(ch);
+		return ch == 'a' || ch == 'e' ||ch == 'i'||ch == 'o' ||ch == 'u' ;  
+	}
 	
+
 	public static void main(String[] args){
 
-     int[] array = {10,20,30,40,50};
-     int temp = array[0];
-     
-     for(int i = 1;i<array.length;i++) {
-    	 array[i-1] = array[i];
-     }
+	char ch = 'a';
 	
-     array[array.length-1] = temp;
-     
-     for(int i : array) {
-    	 System.out.print(i+" ");
-     }
+	if(isVowel(ch)) {
+		System.out.println("is an vowel");
+	}
+	else {
+		System.out.println("is an consonont");
+	}
      
 	}
 }
