@@ -7,30 +7,28 @@ public class Practice {
 	
 	public static void main(String[] args){
 
-		int [] a = new int [5];
-		Scanner sc = new Scanner(System.in);
+		int num = 19;
+		int count = 0;
 		
-		for(int i = 0 ; i<5;i++) {
-			a[i] = sc.nextInt();
-		}
-		
-		int max = a[0];
-		
-		for(int i = 1 ; i<5;i++) {
-			if(a[i]>max) {
-				max = a[i];
-			}
+		if(num > 1) {
 			
-		}
-		
-		System.out.println(max+"is the largest element in the array");
+			for(int i = 1; i<=num ; i++) {
+				if(num%i == 0) 
+					count++;
+				}
+			    if(count ==2) {
+			    	System.out.println("is an prime number");
+			    }
+			    else {
+			    	System.out.println("is not a prime number");
+			    }
+			    }			
+			else {		 			
+		     System.out.println();		
+	     }
+        }
 		
 	}
-}
-		
-
-
-
 		
 		
 		
