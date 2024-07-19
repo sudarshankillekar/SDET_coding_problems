@@ -6,26 +6,29 @@ public class Practice {
 	
 	
 	
-	 static void fibbonacilogic(int n) {
+	 static int [] twosum (int [] num,int target) {
 	
-		int num1 = 0; int num2 = 1;
-		
-		for(int i = 0 ; i<n;i++) {
-			int num3 = num1+num2;
-			System.out.print(num1+" ");
-			num1 = num2;
-			num2 = num3;
-		}
+		 HashMap<Integer,Integer> map = new HashMap<>();
+		 
+		 for(int i = 0 ; i<num.length;i++) {
+			 int requ_num = target- num[i];
+			 if(map.containsKey(requ_num)) {
+				 int [] arr = {map.get(requ_num),i};
+				 return arr;
+ 			 }
+			 map.put(num[i], i);
+		 }
+	return null ;
 		 
 	}
 	
 	
 	public static void main(String[] args) {
 		
-
-    int n = 10;
-    
-    fibbonacilogic(n);
+		
+	int [] num = {3,3}; 	
+    System.out.println(Arrays.toString(twosum(num, 6)));
+  
 		
 		
 	}
