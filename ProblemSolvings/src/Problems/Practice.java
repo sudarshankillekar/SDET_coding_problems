@@ -4,37 +4,31 @@ import java.util.*;
 
 public class Practice {
 	
+   static void PrintPair(int [] arr,int n , int sum ) {
+	   
+	   for(int i = 0 ; i <n ;i++) {
+		   for(int j = i+1 ;j<n ; j++) {
+			   if(arr[i]+arr[j] == sum) {
+				   System.out.println("("+arr[i]+" "+arr[j]+")");
+			   }
+		   }
+	   }
+   }
 	
-	
-	 static int [] twosum (int [] num,int target) {
-	
-		 HashMap<Integer,Integer> map = new HashMap<>();
-		 
-		 for(int i = 0 ; i<num.length;i++) {
-			 int requ_num = target- num[i];
-			 if(map.containsKey(requ_num)) {
-				 int [] arr = {map.get(requ_num),i};
-				 return arr;
- 			 }
-			 map.put(num[i], i);
-		 }
-	return null ;
-		 
-	}
 	
 	
 	public static void main(String[] args) {
 		
+		int [] arr = {1,3,2,2,5,6,-1};
+		int n = arr.length;
+		int sum = 4 ;
 		
-	int [] num = {3,3}; 	
-    System.out.println(Arrays.toString(twosum(num, 6)));
-  
-		
+		PrintPair(arr, n, sum);
 		
 	}
 	
 }
-   
+
 	
 
 
