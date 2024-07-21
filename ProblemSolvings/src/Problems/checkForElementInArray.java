@@ -22,9 +22,6 @@ public class checkForElementInArray {
 		System.out.println("is palindrome");
 		else
 		System.out.println("Not palindrome");
-	
-	
-	
-	
+		
 	}
 }

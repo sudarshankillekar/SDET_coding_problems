@@ -4,27 +4,31 @@ import java.util.*;
 
 public class Practice {
 	
-   static void PrintPair(int [] arr,int n , int sum ) {
-	   
-	   for(int i = 0 ; i <n ;i++) {
-		   for(int j = i+1 ;j<n ; j++) {
-			   if(arr[i]+arr[j] == sum) {
-				   System.out.println("("+arr[i]+" "+arr[j]+")");
-			   }
-		   }
-	   }
-   }
-	
-	
-	
 	public static void main(String[] args) {
 		
-		int [] arr = {1,3,2,2,5,6,-1};
-		int n = arr.length;
-		int sum = 4 ;
+		String s = new String();
+		Scanner sc = new Scanner(System.in);
+		System.out.println("enter an name to check for palidrome");
+		s = sc.nextLine();
 		
-		PrintPair(arr, n, sum);
+		int i ,j ,flag = 0;
+		i = 0; j = s.length()-1;
 		
+		while(i<j && flag == 0) {
+			if(s.charAt(i)!=s.charAt(j)) {
+				flag = 1;
+				break;
+			}
+			i++;
+			j--;
+		}
+		if(flag == 0) {
+			System.out.println("palindrome");
+		}
+		else {
+			System.out.println("is not palindrome");
+		}
+	
 	}
 	
 }
