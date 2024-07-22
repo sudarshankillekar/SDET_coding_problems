@@ -22,25 +22,28 @@ public class intersectionOfSortedArray {
 	
 		
    while(i < arr1.length && j <arr2.length) {
-   	
+   	//Skip duplicate elements in the array , if the element is duplicate then increment it by i++
    	while ((i < arr1.length-1) && (arr1[i] == arr1[i+1])) {
    		i++;
    		
    	}
-   	
+   	//Skip duplicate elements in the array , if the element is duplicate then increment it by j++
    	while ((j < arr2.length-1) && (arr2[j] == arr2[j+1])) {
    		j++;
    		
    	}
    	
-   	
+   	//if arr1 is less then arr2 , then increment it by i++
    	if(arr1[i]<arr2[j]) {
    		i++;	
    	} 
-   	
+
+	//if arr1 is less then arr2 , then increment it by i++	
    	else if  (arr1[i]>arr2[j]) {
    		j++;	
    	}
+
+	//then store all the intersection of element in arr1	
    	else {
    		IntersectedList.add(arr1[i]);
    		i++;
