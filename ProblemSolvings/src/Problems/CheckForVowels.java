@@ -5,7 +5,17 @@ public class CheckForVowels {
 	
 	public static boolean isVowel(char ch) {
 		ch = Character.toLowerCase(ch);		
+		if(isVowel(ch))
+		{
+			System.out.println(ch+" is vowel");
+		}
+		else
+		{
+			System.out.println(ch+" is consonent");
+		}      
+		
 		return ch =='a'|| ch == 'e'||ch =='i'|| ch =='o'|| ch =='u';
+		
 	}
 
 	public static void main(String[] args) {
