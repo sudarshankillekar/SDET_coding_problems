@@ -5,7 +5,7 @@ import java.util.*;
 public class Practice {
 	
 	public static void main(String[] args) {
-		
+		//Added
 		String s = new String();
 		Scanner sc = new Scanner(System.in);
 		System.out.println("enter an name to check for palidrome");
