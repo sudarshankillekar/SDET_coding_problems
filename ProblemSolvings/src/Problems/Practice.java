@@ -10,7 +10,7 @@ public class Practice {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("enter an name to check for palidrome");
 		s = sc.nextLine();
-		
+		//S
 		int i ,j ,flag = 0;
 		i = 0; j = s.length()-1;
 		
