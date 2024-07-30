@@ -3,7 +3,7 @@ package Problems;
 public class ArmStrongNumber {
 
 	public static void main(String[] args) {
-		
+		//
 		int n = 150;
 		int temp = n;
 		int rem , sum = 0;
