@@ -4,7 +4,7 @@ public class checkForElementInArray {
 	
 	public static void main(String[] args) {
 		String s = "dad";
-
+//
 		int i ,j,flag = 0;
 		i = 0;
 		j = s.length()-1;
