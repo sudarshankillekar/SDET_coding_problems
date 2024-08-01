@@ -5,33 +5,50 @@ import java.util.*;
 public class Practice {
 	
 	public static void main(String[] args) {
-		//Added
-		String s = new String();
-		Scanner sc = new Scanner(System.in);
-		System.out.println("enter an name to check for palidrome");
-		s = sc.nextLine();
-		//S
-		int i ,j ,flag = 0;
-		i = 0; j = s.length()-1;
-		
-		while(i<j && flag == 0) {
-			if(s.charAt(i)!=s.charAt(j)) {
-				flag = 1;
-				break;
-			}
-			i++;
-			j--;
-		}
-		if(flag == 0) {
-			System.out.println("palindrome");
-		}
-		else {
-			System.out.println("is not palindrome");
-		}
+
+    int [] arr = {22,99,102,21,89,33,23,111};
+
+    HashMap<Integer,Boolean> Map = new HashMap<>();
+    
+    for(int val : arr) {
+    Map.put(val, true);
+    }
+    
+    for(int val : arr) {
+    	if(Map.containsKey(val-1)){
+    		Map.put(val, false);
+    	}
+    }
+    
+	int ml = 0;
+	int msp = 0;
 	
+	for(int val : arr) {
+		if(Map.get(val) == true) {
+			int tl = 1;
+			int tsp = val;
+		
+	while(Map.containsKey(tsp+tl)) {
+	       tl++;	
+	}
+		if(tl>ml) {
+			 ml =tl;
+			  msp=tsp;
+		}
+		}	
+	}
+		System.out.println("longest subsequent in an element "+ml);
+		for(int i = msp ;i<msp+ml;i++) {
+			System.out.print(i+" ");
+		}
+		
+	}
 	}
 	
-}
+	
+	
+		
+
 
 	
 
