@@ -5,7 +5,7 @@ import java.util.*;
 public class Practice {
 	
 	public static void main(String[] args) {
-
+//
     int [] arr = {22,99,102,21,89,33,23,111};
 
     HashMap<Integer,Boolean> Map = new HashMap<>();
