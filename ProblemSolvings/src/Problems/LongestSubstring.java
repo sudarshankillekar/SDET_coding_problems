@@ -29,7 +29,7 @@ public class LongestSubstring {
 	                maxLen = end - start + 1;
 	                maxStart = start;
 	                maxEnd = end;
-	                //test 
+	               // //test 
 	            }
 	        }
 	        return "Length: " + maxLen + ", Substring: " + s.substring(maxStart, maxEnd + 1);

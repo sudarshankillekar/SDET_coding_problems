@@ -2,6 +2,8 @@ package Problems;
 
 import java.util.*;
 
+//this program is used to count charactes in sw
+
 public class CountcharInSeq {
 
 	public static void main(String[] args) {

@@ -6,31 +6,24 @@ public class Practice {
 	
 	public static void main(String[] args) {
   
-	int [] nums = {2,9,8,1};
-	int target = 3;
-	System.out.println(Arrays.toString(twosumlogic(nums, target)));
+		String str = "aabbccrrtt";
 		
-	}	
-	
-	static int[] twosumlogic(int[] nums ,int target) {
-	
-		HashMap<Integer,Integer>  map = new HashMap<>();
+		HashMap<Character , Integer> map = new HashMap<>();
 		
-		for(int i = 0;i<nums.length;i++) {
-			int req_num = target - nums[i];
-			if(map.containsKey(req_num)) {
-				int [] arr = {map.get(req_num),i};
-				return arr;
+		for(int i =0;i<str.length();i++) {
+			if(map.containsKey(str.charAt(i))){
+				map.put(str.charAt(i), map.get(str.charAt(i))+1);
 			}
-			map.put(nums[i], i);
+			else {
+			map.put(str.charAt(i), 1);	
+			}
 		}
-		return null;		
+		
+		map.forEach((key,value) -> System.out.print(key+""+value));
+		
+		
 	}
-	
-	
-	
-	}
-
+}
 	
 	
 		
