@@ -4,7 +4,7 @@ import java.util.*;
 public class LongestSubstring {
 
 	 public static void main(String[] args) {
-	        String s = "abccralmn";
+	        String s = "abccrralmmn";
 	        System.out.println(lengthOfTheLongestSubstring(s));
 	    }
 
@@ -25,7 +25,7 @@ public class LongestSubstring {
 	            }
 	            map.put(c, end);
 
-	            if (end - start + 1 > maxLen) {
+	            if (end - start + 1 >= maxLen) {
 	                maxLen = end - start + 1;
 	                maxStart = start;
 	                maxEnd = end;
