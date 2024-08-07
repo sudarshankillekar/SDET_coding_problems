@@ -17,7 +17,7 @@ public class Fibonacciseries {
 		//test
 	public static void main(String[] args) {
 	
-	int	N = 10;
+	int	N = 8;
 	
 	fibonacilogic(N);
 		

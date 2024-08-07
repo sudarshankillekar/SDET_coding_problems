@@ -3,13 +3,12 @@ package Problems;
 public class primenumber {
 
 	public static void main(String[] args) {
-		int num = 5;
+		int num = 19;
 		int count = 0;
 		
 		if(num>1) {
 			
-		for(int i = 1; i<=num ;i++) {
-			
+		for(int i = 1; i<=num ;i++) {			
 			if(num%i==0) 
 				count++;
 		}
@@ -23,7 +22,6 @@ public class primenumber {
 		else {
 			System.out.println("Not an prime number");
 		}
-//tesr
 	}
 
 }

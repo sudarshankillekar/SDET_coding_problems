@@ -15,7 +15,7 @@ public class reverseArray {
 	    } 
 
 	    /* Utility that prints out an array on a line */
-	    static void printArray(int arr[], int size) { 
+	    static void printArray(int[] arr, int size) { 
 	        for (int i = 0; i < size; i++) 
 	            System.out.print(arr[i] + " "); 
 	        System.out.println(); 
