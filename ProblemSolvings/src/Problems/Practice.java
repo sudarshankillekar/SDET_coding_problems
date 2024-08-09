@@ -5,22 +5,22 @@ import java.util.*;
 
 public class Practice {
 	
-	   static void fibonacci(int n) {
-		  int num1 = 0,  num2 = 1;
-		  for(int i = 0;i<n ;i++) {
-			  int num3 = num1+num2;
-			  System.out.print(num1+" ");
-			  num1 = num2;
-			  num2 = num3;
-		  }		   
-	   }
+	   
+  public static void main(String[] args) {
+	
+	 String str = "sudarshan";
+	 String rstr  = "";
+	 char ch ;
 	 
-	   public static void main(String[] args) {
-		fibonacci(8);
-	}
+	 
+	 for(int i = 0;i<str.length();i++) {
+	    ch = str.charAt(i);
+	    rstr = ch+rstr;
+	 }
+		   System.out.println(rstr);
 		
 	}
-	
+}
 	
 
 	
