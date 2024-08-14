@@ -1,5 +1,5 @@
 package Problems;
-//3
+//
 
 import java.util.*;
 
@@ -7,48 +7,31 @@ public class Practice {
 	
 	   
   public static void main(String[] args) {
-   
-	String s = "abcyhcabiojiijfugygg"  ;
-	System.out.println(lenghtOfLongestSubstring(s));	  
+	
+	  String s = "  the sky  is blue  ";
+	  System.out.println(reverseEachWord(s));
+	  
   }
   
-  
-  static String lenghtOfLongestSubstring(String s) {
+  static String reverseEachWord(String s) {
 	  
-	  HashMap<Character,Integer> map = new HashMap<>();
 	  
-	  int start = 0;
-	  int maxstart = 0;
-	  int maxLen = 0 ;
-	  int maxend = 0;
+	  String [] words = s.split(" +");
+	  StringBuilder sb = new StringBuilder();
 	  
-	  for(int end = 0 ; end<s.length(); end++) {
-	  
-	  char c = s.charAt(end);
-	  
-	  if(map.containsKey(c)) {
-		  if(start <= map.get(c)) {
-			  start = map.get(c)+1;
-		  }
+	  for(int i = words.length-1 ; i>=0;i--) {
+		  sb.append(words[i]);
+		  sb.append(" ");
 	  }
-	  map.put(c, end);
-	  
-	  if(end-start+1 >= maxLen) {
-		maxLen =  end-start+1; 
-		maxstart = start;
-		maxend = end;
-	  }
-	  
-	  }
-	  
-	  return "lenght"+maxLen+", Substring :"+ s.substring(maxstart,maxend+1);
-	  
-  }	  
+	   
+	 return sb.toString().trim(); 
 	  
   }
   
   
   
+}  
+
   
   
   

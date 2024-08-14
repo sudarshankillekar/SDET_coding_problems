@@ -1,7 +1,7 @@
 package Problems;
 
 public class reverseWordsinString {
-    
+ //3   
 	public static void main(String[] Args ) {
 		
 	 System.out.println(reverseWords("  the sky  is blue  "));	
