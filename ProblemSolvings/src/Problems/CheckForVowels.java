@@ -1,6 +1,6 @@
 package Problems;
 import java.util.*;
-
+//4
 public class CheckForVowels {
 	
 	public static boolean isVowel(char ch) {
