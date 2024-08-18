@@ -3,7 +3,7 @@ import java.util.*;
 public class LongestSubsequesntInArray {
 
 	public static void main(String[] args) {
-		 int [] arr =  {1, 9, 3, 10, 4, 20, 2};
+		 int [] arr =  {6,3,1,2,34,23,12};
 		 
 	 HashMap <Integer, Boolean> map = new HashMap<>();
 		for(int val : arr) {
@@ -34,7 +34,7 @@ public class LongestSubsequesntInArray {
 			ml = tl;
 			msp = tsp;
 		}
-		}
+		}   
 	}
 	 System.out.println("Longest Subsequence length: " + ml);
 	for (int i = msp; i < msp + ml; i++) {
