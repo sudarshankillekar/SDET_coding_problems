@@ -7,30 +7,24 @@ public class Practice {
 	   
   public static void main(String[] args) {
 	
-	  fibologic(9);
+	  String s = " abjnoijijdk";
 	  
-  }
-  
-  
-  static void fibologic(int n) {
+	  HashMap<Character,Integer> map = new HashMap<>();
 	  
-	  int num1 = 0;
-	  int num2 =1;
-	  
-	  for(int i = 0;i<n;i++) {
-		  int num3 = num1+num2;
-		  System.out.print(num1+" ");
-		  num1 = num2;
-		  num2 = num3;
+	  for(int i = 0; i<s.length();i++) {
+		  if(map.containsKey(s.charAt(i))) {
+			  map.put(s.charAt(i), map.get(s.charAt(i))+1);
+		  }
+		  else {
+			  map.put(s.charAt(i), 1);
+		  }
+	  }
+		  map.forEach((key,value)-> System.out.print(key+"" +value));
 	  }
 	  
-	  
-  }
-  
-  
-  
-  
 }
+  
+
   
   
 
