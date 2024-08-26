@@ -6,34 +6,34 @@ import java.util.*;
 public class Practice {
 		
   
-		   
-	public static void printpairSum(int [] arr ,int sum ,int size) {
+	public static void main(String[] args) {
 		
-		for(int i = 0;i<size;i++) {
-			for(int j = i+1;j<size;j++) {
-				if(arr[i]+arr[j] == sum) {
-					System.out.println("("+arr[i]+" "+arr[j]+")");
-				}
-			}
-		}
-		
-		
+	   int [] nums = {1,3,4,5,4};
+	   int target = 4;
+	   
+	  
+	   System.out.println( Arrays.toString(printpairSum(nums, target)));
 		
 	}
-	 public static void main(String[] args) {
-	     
-		   int [] arr = {1,23,24,4,2,3,2};
-		   int sum = 5;
-		   int size = arr.length;
-		   printpairSum(arr,sum,size);
-		  
-		   }  
-	   
-	   
-	   
-   }
-
-
+	
+	
+		   
+	public static int []  printpairSum(int [] nums ,int target) {
+		
+		HashMap<Integer,Integer> map = new HashMap<>();
+		
+		for(int i = 0;i<nums.length;i++) {
+            int req_num =  target - nums[i];
+			if(map.containsKey(req_num)) {
+			int [] arr =	{ map.get(req_num),i};
+			return arr;
+			}
+				map.put(nums[i],i);
+			}
+			return null;	
+		}
+		
+	}
   
 
 
