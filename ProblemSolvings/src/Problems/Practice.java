@@ -7,35 +7,35 @@ public class Practice {
 		
   
 	public static void main(String[] args) {
-		
-	   int [] nums = {1,3,4,5,4};
-	   int target = 4;
 	   
-	  
-	   System.out.println( Arrays.toString(printpairSum(nums, target)));
-		
-	}
 	
+		
+	String text = "Hi Hi my name is sudarshan and sudarshan is best at coding";
+	String [] Splited_word = text.split(" ");
 	
-		   
-	public static int []  printpairSum(int [] nums ,int target) {
-		
-		HashMap<Integer,Integer> map = new HashMap<>();
-		
-		for(int i = 0;i<nums.length;i++) {
-            int req_num =  target - nums[i];
-			if(map.containsKey(req_num)) {
-			int [] arr =	{ map.get(req_num),i};
-			return arr;
-			}
-				map.put(nums[i],i);
-			}
-			return null;	
+	HashMap<String,Integer> map = new HashMap<>();
+	
+	for(String word : Splited_word) {
+		if(map.containsKey(word)) {
+			map.put(word, map.get(word)+1);
 		}
+		else {
+			map.put(word, 1);
+		}
+	}	
+		for(String words : map.keySet()) {
+			System.out.println(words+" "+map.get(words));
+		}
+	
+	
+	
+	
+	
+	
 		
 	}
   
-
+}
 
   
   
