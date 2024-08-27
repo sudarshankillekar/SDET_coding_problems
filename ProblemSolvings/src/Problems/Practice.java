@@ -27,7 +27,7 @@ public class Practice {
 			System.out.println(words+" "+map.get(words));
 		}
 	
-	
+//	
 	
 	
 	
