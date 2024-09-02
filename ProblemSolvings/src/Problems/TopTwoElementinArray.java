@@ -26,9 +26,7 @@ public class TopTwoElementinArray {
 					temp = input[i];
 					input[i] = input[j];
 					input[j] = temp;
-				}
-					
-					
+				}				
 				}
 			}
 			return input;

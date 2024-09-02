@@ -4,33 +4,32 @@ package Problems;
 import java.util.*;
 
 public class Practice {
-		
-  
+	  
 	public static void main(String[] args) {
-	   
-    String name = "sudarshan";
     
-    HashMap<Character,Integer> map = new HashMap<>();
-    
-    for(int i = 0;i<name.length();i++) {
-    	
-    	if(map.containsKey(name.charAt(i))) {
-    		map.put(name.charAt(i), map.get(name.charAt(i))+1);
-    	}else {
-    		map.put(name.charAt(i), 1);
-    	}
-    }
-    	map.forEach((Key,Value) -> System.out.print(Key+""+Value));
-    	
-    }
-    		
 		
-		
-		
-		
-		
-		
-    
+	int num = 154;
+	int temp = num;
+	
+	int rem , sum = 0;
+		 
+	while(num>0) {
+	
+	rem = num%10;
+	
+	sum = (rem*rem*rem)+sum;
+	
+	num = num/10;
+			
+	}
+	
+	if(temp == sum) {
+		System.out.println("is an armstrong number");
+	}
+	else {
+		System.out.println("is not an aRMstrong number");
+	}
+    }   
 	}
   
 
