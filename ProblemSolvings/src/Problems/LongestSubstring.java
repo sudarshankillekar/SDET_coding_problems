@@ -4,7 +4,7 @@ import java.util.*;
 public class LongestSubstring {
 
 	 public static void main(String[] args) {
-	        String s = "abccrralmmn";
+	        String s = "abccrrkarrlmmn";
 	        System.out.println(lengthOfTheLongestSubstring(s));
 	    }
 
