@@ -1,0 +1,18 @@
+
+public class  replaceVowelWithxInString {
+public static void main(String[] args) {		
+	
+	 String s  = "sudarshan";
+	 String lowercasedS = s.toLowerCase();
+	 StringBuilder sb = new StringBuilder();
+	 
+	 for( char currentchar : lowercasedS.toCharArray()) {
+		 if(currentchar  =='a'||currentchar  == 'e'||currentchar  == 'i'||currentchar  == 'o'||currentchar == 'u') {
+			sb.append("x");
+		 }else {
+			 sb.append(currentchar);
+		 }
+	 } 
+	 System.out.println(sb.toString());
+	 }
+  }
