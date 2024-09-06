@@ -1,0 +1,35 @@
+public class Pangram {
+		
+	
+	 public static void main(String[] args) {		
+	
+	 String s  = "The quick brown fox jumps over the lazy dog";
+	 String lowercasedS = s.toLowerCase();
+	 
+	 boolean pangram =  checkpangram(lowercasedS);
+	 
+	 if(pangram) {
+		 System.out.println("is pangram");
+	 }else {
+		 System.out.println("not pangrame");
+	 }
+	 
+	 }
+
+	private static boolean checkpangram(String lowercasedS) {
+		
+		if(lowercasedS.length()<26) {
+			return false;
+		}
+		
+		for(char i = 'a' ;i<='z';i++) {
+			if(lowercasedS.indexOf(i)<0) {
+				return false;
+			}
+		}
+		return true;
+		
+		
+	}
+	 
+}
