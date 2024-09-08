@@ -6,23 +6,34 @@ import java.util.*;
 public class Practice {
 	  
 	public static void main(String[] args) {
-		String str =  " sudarshan is name my ";
-	   String [] splitedString = str.split(" ");
-	   List<String> reversedlist = new ArrayList<>();
- 		for( int i=splitedString.length-1;i >= 0;i--) {
-			reversedlist.add(splitedString[i]);
-	        
+	
+		int num = 150;
+		int temp = num;
+		
+		int  rem, sum = 0;
+		
+		while(num>0) {
+			
+			rem = num%10;
+			sum = (rem*rem*rem)+sum;
+			num = num/10;
+		}
+		
+		if(temp == sum) {
+			System.out.println("is ArmStrong");
+		}
+		else {
+			System.out.println("is not ArmStrong");
 		}
 		
 		
- 		  String reversedString = String.join(" ", reversedlist);
- 	        System.out.println(reversedString.trim());
 		
-    }
-	
+		
 	
 	}
 	
+	
+}
 	
 	
 	

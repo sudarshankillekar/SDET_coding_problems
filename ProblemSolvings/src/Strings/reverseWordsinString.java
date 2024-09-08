@@ -6,6 +6,7 @@ import java.util.List;
 public class reverseWordsinString {
  //3  
 //Alternate method	
+	
 //	String str =  " sudarshan is name my ";
 //	   String [] splitedString = str.split(" ");
 //	   List<String> reversedlist = new ArrayList<>();
