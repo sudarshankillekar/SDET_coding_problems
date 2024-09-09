@@ -7,28 +7,26 @@ public class Practice {
 	  
 	public static void main(String[] args) {
 	
-		int num = 150;
-		int temp = num;
-		
-		int  rem, sum = 0;
-		
-		while(num>0) {
-			
-			rem = num%10;
-			sum = (rem*rem*rem)+sum;
-			num = num/10;
-		}
-		
-		if(temp == sum) {
-			System.out.println("is ArmStrong");
-		}
-		else {
-			System.out.println("is not ArmStrong");
-		}
-		
-		
-		
-		
+	String s  = "Hi My name is Sudarshan and My hobbies are gaming";
+	
+	String [] splitedWord = s.split(" ");
+	
+    HashMap<String , Integer> map  = new HashMap<>();
+    
+    for( String words : splitedWord ) {
+    	
+    	if(map.containsKey(words)) {
+    		map.put(words, map.getOrDefault(words, 0)+1);
+    	}else {
+    		map.put(words, 1);
+    	}	
+    }
+    
+    for( String words : map.keySet()) {	
+    	System.out.println(words + " "+ map.get(words) );
+    }
+    	
+	
 	
 	}
 	
