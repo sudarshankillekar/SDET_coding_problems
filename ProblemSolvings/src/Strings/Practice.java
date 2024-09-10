@@ -5,33 +5,32 @@ import java.util.*;
 
 public class Practice {
 	  
-	public static void main(String[] args) {
 	
-	String s  = "Hi My name is Sudarshan and My hobbies are gaming";
+ public static void main(String[] args) {
 	
-	String [] splitedWord = s.split(" ");
+	int arr[] = {1,2,3,4,5}; 
+	int start = 0, end  = arr.length-1, temp ;
 	
-    HashMap<String , Integer> map  = new HashMap<>();
-    
-    for( String words : splitedWord ) {
-    	
-    	if(map.containsKey(words)) {
-    		map.put(words, map.getOrDefault(words, 0)+1);
-    	}else {
-    		map.put(words, 1);
-    	}	
-    }
-    
-    for( String words : map.keySet()) {	
-    	System.out.println(words + " "+ map.get(words) );
-    }
-    	
-	
-	
+	while(start<end) {
+		
+		 temp = arr[start] ;
+		
+		 arr[start] = arr[end];
+		 arr[end] = temp;
+		 start++;
+		 end--;
+		
 	}
 	
-	
+	System.out.println(Arrays.toString(arr));
 }
+  
+  }
+ 
+ 
+ 
+	
+
 	
 	
 	

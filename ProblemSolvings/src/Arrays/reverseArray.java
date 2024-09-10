@@ -1,7 +1,17 @@
 package Arrays;
+
+import java.util.Arrays;
+
 //3
 public class reverseArray {
 
+	
+	public static void main(String[] args) {
+		int arr [] = {1,2,3,4,5,6};
+		int start = 0;
+		int end = arr.length-1;
+		reversedArray(arr, start, end);
+	}
 	
 	   static void reversedArray(int arr[], int start, int end) { 
 	        int temp; 
@@ -12,22 +22,10 @@ public class reverseArray {
 	            start++; 
 	            end--; 
 	        } 
+	        
+	        System.out.println(Arrays.toString(arr));
 	    } 
 
-	    /* Utility that prints out an array on a line */
-	    static void printArray(int[] arr, int size) { 
-	        for (int i = 0; i < size; i++) 
-	            System.out.print(arr[i] + " "); 
-	        System.out.println(); 
-	    } 
-
-	    // Driver code 
-	    public static void main(String args[]) { 
-	        int arr[] = {1, 2, 3, 4, 5, 6}; 
-	        printArray(arr, 6); 
-	        reversedArray(arr, 0, 5); 
-	        System.out.print("Reversed array is \n"); 
-	        printArray(arr, 6); 
-	    } 
+	 
 	
 }
