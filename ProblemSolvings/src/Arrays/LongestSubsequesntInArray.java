@@ -38,7 +38,7 @@ public class LongestSubsequesntInArray {
 	}
 	 System.out.println("Longest Subsequence length: " + ml);
 	for (int i = msp; i < msp + ml; i++) {
-		
+//		
 		 System.out.print(i + " ");     }
 }
 }
