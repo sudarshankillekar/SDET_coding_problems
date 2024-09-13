@@ -8,26 +8,44 @@ public class Practice {
 	
  public static void main(String[] args) {
 	
-	int arr[] = {1,2,3,4,5}; 
-	int start = 0, end  = arr.length-1, temp ;
+	 int [] arr =  {6,3,1,2,34,23,12};
 	
-	while(start<end) {
+		HashMap<Integer,Boolean> map = new HashMap<>();
 		
-		 temp = arr[start] ;
+		for(int val : arr) {
+			map.put(val, true);
+		}
 		
-		 arr[start] = arr[end];
-		 arr[end] = temp;
-		 start++;
-		 end--;
+		for(int val : arr) {
+			if(map.containsKey(val-1)) {
+				map.put(val, false);
+			}
+		}
 		
+	int msp = 0;
+	int ml = 0;
+	   for(int val : arr) {
+		   if(map.get(val) == true) {
+			 int tl = 1;
+			 int tsp = val;
+		   
+		  
+	  while(map.containsKey(tsp+tl)) {
+		tl++;
+	  }
+		 
+	  if(tl>ml) {
+		  ml = tl;
+		  msp = tsp;
+	  }
+	   }
+	   }
+	   System.out.println("Longest Subsequence length: " + ml);
+	for(int i = msp ; i<msp+ml;i++) {
+		System.out.print(i+ " ");
 	}
-	
-	System.out.println(Arrays.toString(arr));
+ }
 }
-  
-  }
- 
- 
  
 	
 

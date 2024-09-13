@@ -4,7 +4,7 @@ public class reverseSecondWordsInString {
 
 	
 	    public static void main(String[] args) {
-	        String s = "sudarshan sangeeta";
+	        String s = "Sudarshan gopal killekar";
 	        String[] l = s.split(" ");
 	        int i = 0;
 	        StringBuilder output = new StringBuilder();
