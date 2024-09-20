@@ -1,3 +1,5 @@
+package Arrays;
+
 public class checkForSortedArray {
     public static int isSorted(int n, int []a) {
         
