@@ -8,22 +8,28 @@ public class Practice {
 	
  public static void main(String[] args) {
 	
-	 int arr [] = {1,2,3,4,5};
-	 
-	 int n = 5;
+	int []arr = {1,23,3,5,6,2};
 	
-	 int temp = arr[0];
-	 
-	 for(int i = 0;i<n-1;i++) {
-		 arr[i] = arr[i+1];
-	 }
-	 
-	 arr[n-1] = temp;
-	 
-	 for(int i = 0;i<n;i++) {
-		 System.out.print(arr[i]+" ");
-	 }
+	int max  = Integer.MIN_VALUE;
+	int secMax = Integer.MIN_VALUE;
 	
+	for(int i = 0;i<arr.length;i++) {
+		if(arr[i]>max) {
+			max = arr[i];
+		}
+	}
+	
+	for(int i = 0 ;i<arr.length;i++) {
+		if(arr[i]>secMax && arr[i]<max) {
+			secMax = arr[i];
+		}
+	}
+	
+	if(secMax == Integer.MAX_VALUE) {
+		System.out.println("Second largest element found");
+	}else {
+		System.out.println(secMax +" second largest element");
+	}
 	 
 	
  }
