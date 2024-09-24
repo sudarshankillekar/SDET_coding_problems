@@ -15,10 +15,7 @@ public class MoveZeroesToLeft {
 				break;
 			}
 		}
-     
-		if(j == -1)  
-			System.out.println(arr);
-		
+     	
 		for(int i = j+1;i<arr.length;i++) {
 			if(arr[i]!=0) {
 		      int temp = arr[i];
