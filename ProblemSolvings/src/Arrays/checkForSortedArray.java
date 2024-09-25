@@ -6,7 +6,6 @@ public class checkForSortedArray {
         
         for (int i = 0; i < n - 1; i++) {
             if (a[i] > a[i + 1]) {
-                // If the current element is greater than the next, the array is not sorted
                 return 0;
             }
         }
@@ -14,4 +13,14 @@ public class checkForSortedArray {
         return 1;
 
     }
+    public static void main(String[] args) {
+		
+    	int []arr = {12,13,2,4,5};
+     	int n = arr.length;
+				 
+		
+    	
+    	isSorted(n, arr);
+    	
+	}
 }

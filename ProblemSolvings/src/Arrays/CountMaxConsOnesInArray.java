@@ -14,10 +14,12 @@ public class CountMaxConsOnesInArray {
 		        } else {
 		           currentCount = 0;
 		        }
-		        
+
 		           maxCount =     Math.max(maxCount, currentCount);
 		    }	        
 		    System.out.println(maxCount);
+		    
+		    
 		
 
 	

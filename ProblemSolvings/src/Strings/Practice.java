@@ -8,28 +8,25 @@ public class Practice {
 	
  public static void main(String[] args) {
 	
-	int []arr = {1,23,3,5,6,2};
-	
-	int max  = Integer.MIN_VALUE;
-	int secMax = Integer.MIN_VALUE;
-	
-	for(int i = 0;i<arr.length;i++) {
-		if(arr[i]>max) {
-			max = arr[i];
-		}
-	}
-	
-	for(int i = 0 ;i<arr.length;i++) {
-		if(arr[i]>secMax && arr[i]<max) {
-			secMax = arr[i];
-		}
-	}
-	
-	if(secMax == Integer.MAX_VALUE) {
-		System.out.println("Second largest element found");
-	}else {
-		System.out.println(secMax +" second largest element");
-	}
+	 String s = "malayalam";
+	 
+	 int i = 0;
+	 int j = s.length()-1;
+	 int flag = 0;
+	 
+	 while(i<j && flag == 0) {
+		 if(s.charAt(i)!=s.charAt(j)) {
+			 flag = 1;
+		   break;
+	 }
+	 i++;
+	 j--;
+ }	 
+	 if(flag == 0) {
+		 System.out.println("palindrome");
+	 }else {
+		 System.out.println("not palindrome");
+	 }
 	 
 	
  }
