@@ -8,25 +8,20 @@ public class Practice {
 	
  public static void main(String[] args) {
 	
-	 String s = "malayalam";
+   
+	 int arr [ ] = {1,2,3,4,5,3};
+	 int sum = 6;
 	 
-	 int i = 0;
-	 int j = s.length()-1;
-	 int flag = 0;
 	 
-	 while(i<j && flag == 0) {
-		 if(s.charAt(i)!=s.charAt(j)) {
-			 flag = 1;
-		   break;
+	 for(int i = 0;i<arr.length;i++) {
+		 for(int j = i+1;j<arr.length;j++) {
+			 if(arr[i]+arr[j] == sum) {
+				 System.out.println("("+arr[i]+" "+arr[j]+")");
+			 }
+		 }
 	 }
-	 i++;
-	 j--;
- }	 
-	 if(flag == 0) {
-		 System.out.println("palindrome");
-	 }else {
-		 System.out.println("not palindrome");
-	 }
+	 
+	 
 	 
 	
  }
