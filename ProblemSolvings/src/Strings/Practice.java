@@ -8,51 +8,33 @@ public class Practice {
 	
  public static void main(String[] args) {
 	
+  int n =100;
+  int num1 = 0;
+  int num2 =1;
+  
+  for(int i = 0 ;i<n;i++) {
+	  
+	  int num3 = num1+num2;
+	  System.out.print(num1+ " ");
+	  num1 = num2 ;
+	  num2 = num3;
+	  
+  }
 	
-	 String s1 = "silent";
-	 String s2 = "listn";
+	
+	
+	
+ }	
+	
 	 
-	 
-	 System.out.println(anagram(s1, s2));
- }	 
-	 
-	static boolean anagram(String s1,String s2) {
-		
-	
-    
-	String str1 =	s1.replaceAll("//s", "");
-	  String str2 =  s2.replaceAll("//s", "");
-	
-	
-	if(s1.length()!=s2.length()) {
-		return false;
-	}else {
-		
-     char[] c1=  str1.toLowerCase().toCharArray();
-     char[] c2 = str2.toLowerCase().toCharArray();
-	
-   	 Arrays.sort(c1);
-   	 Arrays.sort(c2);
-   	 
-   	   return  Arrays.equals(c1, c2);
-
-	}
-	
-		
-		
-		
-	}
-	 
-	
-	
+ }
+  
  
-	 
- } 
 	
 	 
 	 
 	 
-	
+
  
 
  
