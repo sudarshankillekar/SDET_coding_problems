@@ -8,24 +8,32 @@ public class Practice {
 
 	public static void main(String[] args) {
 		
-	String words = "sudarshan gopal killekar";
-	
-	String [] splitedWord = words.split(" ");
-	
-	StringBuilder builder = new StringBuilder(splitedWord[2]);
-	
-	splitedWord[2] =   builder.reverse().toString();
-	
-	 String Rev =     String.join(" ", splitedWord);
-	
-	System.out.println(Rev);	
+
+		int arr [] = {12,5,45,6,87,9};
 		
+		
+		int max = arr[0];
+		int secondmax  = arr[0];
 	
-	
+		for(int i = 1;i<arr.length;i++) {
+			if(arr[i]>max) {
+				max = arr[i];
+				
+			}
+		}	
+//		System.out.println(max);
+ 
+		for(int i = 0;i<arr.length;i++) {
+			if(arr[i]>secondmax && arr[i]<max){
+				 secondmax = arr[i];
+			}
+		}
+		
+		System.out.println(secondmax);
 	}
- }	
 	
-	 
+	
+}	 
  
   
  
