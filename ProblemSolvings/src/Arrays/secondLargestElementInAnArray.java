@@ -4,7 +4,7 @@ public class secondLargestElementInAnArray {
 
 	public static void main(String[] args) {
 		
-		 int[] arr = {4, 2, 3, 1, 5};
+		 int[] arr = {90,2,5,20,56,100};
 
 	        if (arr.length < 2) {
 	            System.out.println("Array must have at least two elements");
@@ -21,6 +21,8 @@ public class secondLargestElementInAnArray {
 	            }
 	        }
 
+	        System.out.println(max);
+	        
 	        // Find the second largest element
 	        for (int i = 0; i < arr.length; i++) {
 	            if (arr[i] > secondMax && arr[i] < max) {
