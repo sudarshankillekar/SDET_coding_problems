@@ -1,75 +1,79 @@
-package Strings;
-//4
-
-import java.util.*;
-
-public class Practice {
-	  
-
-	public static void main(String[] args) {
-	
-    int num = 103;
-    int rem,sum = 0;
-    int temp = num;
-    
-    
-    while(num>0) {
-    	rem = num%10;
-    	sum = (rem*rem*rem)+sum;
-      num =	num/10;
-    }
-    
-    if(sum == temp) {
-    	System.out.println("is an armstrong number");
-    }else {
-    	System.out.println("not an armstrong number");
-    }
-    
-    
-		
-		
-	}
-}	 
- 
-  
- 
-	
-	 
-	 
-	 
-
- 
-
- 
-	
-
-	
-	
-	
-	
-	
-  
-
-
-  
-  
-
-
-
-
-
-	
-
-	
-		
-
-
-	
-
-
-		
-		
-	
-
-
-	
+//package Strings;
+////4
+//
+//import java.util.*;
+//
+//public class Practice {
+//	  
+//
+//	public static void main(String[] args) {
+//	
+//		String s = "abcdefghigjklmnopqrstuvwxyz" ;
+//		char[] ch = s.toCharArray();
+//		String s1 = "test";
+//		
+//		if(s.length()<26) {
+//			System.out.println("not pangram");
+//		}
+//		 if else {
+//		
+//		for(int i = 'a' ;i<='z';i++) {
+//		 
+//	       if (s.indexOf(i)<0) {
+//				
+//			}
+//			
+//		}
+//   
+//				
+//	
+//	}
+//
+//    
+//   
+//	}
+//	
+//}
+// 
+//  
+// 
+//	
+//	 
+//	 
+//	 
+//
+// 
+//
+// 
+//	
+//
+//	
+//	
+//	
+//	
+//	
+//  
+//
+//
+//  
+//  
+//
+//
+//
+//
+//
+//	
+//
+//	
+//		
+//
+//
+//	
+//
+//
+//		
+//		
+//	
+//
+//
+//	
