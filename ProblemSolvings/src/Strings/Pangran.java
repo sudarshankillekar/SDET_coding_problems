@@ -4,7 +4,7 @@ public class Pangran {
 
 	public static void main(String[] args) {		
 		
-		 String s  = "jumps over the lazy dog";
+		 String s  = "jumps over the lazy dobg";
 		 String lowercasedS = s.toLowerCase();
 		 
 		 boolean pangram =  checkpangram(lowercasedS);
