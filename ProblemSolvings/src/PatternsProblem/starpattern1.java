@@ -21,7 +21,7 @@ public class starpattern1 {
 			System.out.println();
 		}
 		
-		
+		 
 		
 		
 
