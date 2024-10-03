@@ -1,7 +1,15 @@
 package PatternsProblem;
 
 public class DecreasingNumberPatterns {
-
+ 
+//	123456
+//	12345
+//	1234
+//	123
+//	12
+//	1
+	
+	
 	public static void main(String[] args) {
 		
 		for(int i = 1;i<=6;i++) {
