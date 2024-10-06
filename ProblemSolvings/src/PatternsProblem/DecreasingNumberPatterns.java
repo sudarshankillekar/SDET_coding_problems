@@ -9,6 +9,8 @@ public class DecreasingNumberPatterns {
 //	12
 //	1
 //commit 	
+	//test
+	
 	
 	public static void main(String[] args) {
 		
