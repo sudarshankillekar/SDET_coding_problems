@@ -9,7 +9,7 @@ public class DecreasingNumberPatterns {
 //	12
 //	1
 //commit 	
-	//test
+	//test/
 	
 	
 	public static void main(String[] args) {
