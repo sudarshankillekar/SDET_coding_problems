@@ -18,7 +18,7 @@ public class checkPalindrome {
 			
 		}
 		
-//		System.out.println(revNum);
+		System.out.println(revNum);
 		
 		if(dup == revNum) {
 			System.out.println("is palindrome");
