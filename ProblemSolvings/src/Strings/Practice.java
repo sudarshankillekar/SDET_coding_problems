@@ -8,36 +8,33 @@ public class Practice {
 
 	public static void main(String[] args) {
 		
+	String str = "malaayalam";
+	
+	int i = 0, flag = 0;
+	
+	int j = str.length()-1;
+	
+	while(i<j & flag == 0) {
 		
-	int arr[] = {1,23,4,6};
-	int target = 5;
-   System.out.println(Arrays.toString(checkfortwoSum(arr, target)));    
-	
-	
-	}
-	
-	
-	static int[] checkfortwoSum(int []nums,int target) {
-		
-	HashMap<Integer ,Integer> map = new HashMap<>();
-	
-	for(int i = 0 ;i<nums.length;i++) {
-		
-		int req_num = target - nums[i];
-		
-		if(map.containsKey(req_num)) {
-	     int  arr[] =		{map.get(req_num), i};
-	       return arr;
+		if(str.charAt(i)!=str.charAt(j)) {
+			flag = 1;
+			break;
 		}
-		map.put(nums[i], i);
-		
-		
-	}
-		return null;
-		
+		i++;
+		j--;
 		
 	}
 	
+	if(flag == 0) {
+		System.out.println("is palindrome");
+	}else {
+		System.out.println("not palindrome");
+	}
+	
+	
+	
+		
+	}
 	
 }
 
