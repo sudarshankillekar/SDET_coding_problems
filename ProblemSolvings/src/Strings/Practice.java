@@ -7,34 +7,31 @@ public class Practice {
 	  
 
 	public static void main(String[] args) {
-		
-	String str = "malaayalam";
 	
-	int i = 0, flag = 0;
-	
-	int j = str.length()-1;
-	
-	while(i<j & flag == 0) {
-		
-		if(str.charAt(i)!=str.charAt(j)) {
-			flag = 1;
-			break;
+	 
+		if(checkvowel('e')) {
+			System.out.println("is an vowel");
+		}else {
+			System.out.println("is not an vowel");
 		}
-		i++;
-		j--;
+		
+		
+    
+    	
+    	
+    }
+		
+  
+	static boolean checkvowel(char ch) {
+		
+	 ch = Character.toLowerCase(ch);
+	 
+	 return ch == 'a' || ch == 'e'||ch == 'i' ||ch == 'o'||ch == 'u' ;
 		
 	}
 	
-	if(flag == 0) {
-		System.out.println("is palindrome");
-	}else {
-		System.out.println("not palindrome");
-	}
+
 	
-	
-	
-		
-	}
 	
 }
 
