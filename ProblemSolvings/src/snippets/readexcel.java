@@ -10,7 +10,7 @@ public class readexcel {
 		//Calling  the sheet from the workbook using XSSFworkBook 
 	//	XSSFSheet mySheet = myWorkBook.getSheet("Sheet name");
 		//calling row index using sheet reference 
-	///	int LastRowIndex = mySheet.getLastRowNum();
+	///	int LastRowIndex = mySheet.getLastRowNum(); b
 		//calling header of the raw
 	//	XSSFSheet headerrow  = mySheet.getRow(0);
 	///	int totalnumbOfcol = headerRow.getlastcellnum();
