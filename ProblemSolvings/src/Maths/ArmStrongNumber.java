@@ -20,5 +20,5 @@ public class ArmStrongNumber {
 		else
 			System.out.println("is not an armstrong number");
 	}
-
+//
 }
