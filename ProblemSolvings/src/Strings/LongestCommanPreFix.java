@@ -12,7 +12,7 @@ public class LongestCommanPreFix {
 		System.out.println(prefix(strs));
 		
 	}
-
+//test
 	public static String prefix(String[] str) {
 		
 		Arrays.sort(str);
