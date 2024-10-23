@@ -8,26 +8,37 @@ public class Practice {
 
 	public static void main(String[] args) {
 	
-		int []arr = {1,2,3,4,5,6,1};
-		System.out.println(checkForSorted(arr));
+   String s   = "malaayalam";
+   
+   int i = 0 ,flag = 0;
+   int j = s.length()-1;
+   
+   while(i<j&& flag ==0) {
+	   if(s.charAt(i)!=s.charAt(j)) {
+		   flag = 1;
+		   break;
+	   }
+	   i++;
+	   j--;
+   }
+   
+   if(flag ==1) {
+	   System.out.println("no");
+   }else {
+	   System.out.println("yes");
+   }
 		
-		
-		}  
 	
-	
-	static String checkForSorted(int []arr) {
 		
 
-		for(int i = 0;i<arr.length-1;i++) {
-			
-			if(arr[i]>arr[i+1]) 
-				return "is not sorted";		
-		}	
-	
-	 return "is sorted";
+		
+		
 	}
 	
-}
+
+	}
+	
+
 	
 
 
