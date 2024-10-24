@@ -15,26 +15,28 @@ public class LongestCommanPreFix {
 //test
 	public static String prefix(String[] str) {
 		
+		
+		StringBuilder result = new StringBuilder();
 		Arrays.sort(str);
 		
 		int index = 0;
-		String s1 =  str[0];
-		String s2 =  str[str.length-1];
+		char[] first =  str[0].toCharArray();
+		char[] last =  str[str.length-1].toCharArray();
 		
 		Arrays.sort(str);
 		
 		
-		while(index<s1.length()) {
-			if(s1.charAt(index)==s2.charAt(index)) {
-				index++;
-			}else {
+		for(int i = 0;i<first.length;i++) {
+			if( first[i]!= last[i]) {
 				break;
+				result.append(first[i]);
 			}
+			return result.toString();
 		}
 		
-		return index == 0?"":s1.substring(0,index);
 		
-	}
+		
+	
 	
 	
 }
