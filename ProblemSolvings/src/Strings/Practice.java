@@ -8,35 +8,36 @@ public class Practice {
 
 	public static void main(String[] args) {
 	
-   String s   = "malaayalam";
-   
-   int i = 0 ,flag = 0;
-   int j = s.length()-1;
-   
-   while(i<j&& flag ==0) {
-	   if(s.charAt(i)!=s.charAt(j)) {
-		   flag = 1;
-		   break;
-	   }
-	   i++;
-	   j--;
+		String [] str = {"fluet","fluent","floaat"};
+      
+//		longestcommonPrefix(str);
+		System.out.println(longestcommonPrefix(str));
    }
-   
-   if(flag ==1) {
-	   System.out.println("no");
-   }else {
-	   System.out.println("yes");
-   }
+   	
+	static String longestcommonPrefix(String [] str) {
 		
+		StringBuilder result = new StringBuilder();
+		
+		Arrays.sort(str);
+		
+		
+	    char []	first = str[0].toCharArray();
+	    char []    last = str[str.length-1].toCharArray();
 	
-		
-
-		
-		
+	    for(int i = 0 ;i<first.length;i++) {
+	    	
+	    	if(first[i]!=last[i]) 
+	    		break;
+	    		result.append(first[i]);		
 	}
 	
-
+	 return result.toString();
+	
 	}
+	
+}
+	
+
 	
 
 	
