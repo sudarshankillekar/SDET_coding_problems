@@ -31,16 +31,17 @@ public class leftRotateTheArrayByDplacese {
 
 	    // Rotate array left using reverse
 	    public static void rotateLeftUsingReverse(int[] arr, int k) {
-	        k %= arr.length;  // Ensure k is within array bounds
+	     //   k %= arr.length;  // Ensure k is within array bounds
 
 	        // Reverse the first k elements
 	        reverse(arr, 0, k - 1);
-
+            printArray(arr);
 	        // Reverse the remaining elements
 	        reverse(arr, k, arr.length - 1);
-
+           printArray(arr); 
 	        // Reverse the entire array to complete the left rotation
 	        reverse(arr, 0, arr.length - 1);
+	        printArray(arr);
 	    }
 
 	    // Helper function to print the array
