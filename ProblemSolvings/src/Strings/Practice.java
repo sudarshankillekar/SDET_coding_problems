@@ -8,25 +8,20 @@ public class Practice {
 
 	public static void main(String[] args) {
 	
-		int num = 153;
-		int rem ,sum=0;
-		int temp =num;
-		
-		while(num>0) {
-			
-			rem = num%10;
-			
-			sum = (rem*rem*rem)+sum;
-			
-			num = num/10;
-			
-		}
-		
-		if(sum == temp) {
-			System.out.println("is an armstrong number");
-		}else {
-			System.out.println("is not an armstrong number");
-		}
+     int arr [] = {1,1,0,1,0,1,1,1,1};
+     int count =0;
+     int MaxCount = 0;
+     for(int i = 0;i<arr.length;i++) {
+    	 if(arr[i] == 1 ) {
+    		 count++;
+    	 }else {
+    		count =  0;
+    	 }
+    	 MaxCount =	Math.max(MaxCount, count);
+     }
+	
+	
+	System.out.println(MaxCount);
    }
    	
 
