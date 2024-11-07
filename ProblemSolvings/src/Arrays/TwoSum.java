@@ -8,8 +8,8 @@ import java.util.HashMap;
 public class TwoSum {
 
 	public static void main(String[] args) {
-		int[] nums = {3,3};
-        System.out.println(Arrays.toString(twoSum(nums,6)));	
+		int[] nums ={1,2,3,4};
+        System.out.println(Arrays.toString(twoSum(nums,5)));	
 	}
 		
 	public static int[] twoSum(int [] nums,int target) {		
