@@ -7,34 +7,34 @@ public class Practice {
 	  
 
 	public static void main(String[] args) {
-
-     int num = 19;
-     int count=0;
-     
-    if(num>1) {
-    	
-    	for(int i = 1;i<=num;i++) {
-    		if(num%i ==0) 
-    			count++;	
-    	}
-    	
-    	if(count == 2) {
-    		System.out.println("is an prime number");
-    	}else {
-    		System.out.println("is not an prime number");
-    	}
-    } 	
-    	
-    else {
-    	System.out.println("is not an prime number ");
-    }
-		
-		
-		
-		
 	
-			}
+		String demo  =  "Sudarshan earns one lakh per month";
+		
+		String [] splited = demo.split(" ");
+		
+		ArrayList<String> result = new ArrayList<>();
+		
+		for(int i = splited.length-1;i>=0;i--) {
+			
+			result.add(splited[i]);
+			
 		}
+		
+			String finalOutput = String.join(" ",result );
+			
+			System.out.println(finalOutput.trim());
+		
+		
+	}
+
+	
+	
+		
+	}
+	
+	
+	
+
 		
 		
 	

@@ -24,9 +24,7 @@ public class LongestCommanPreFix {
 		for(int i = 0;i<first.length;i++) {
 			if( first[i]!= last[i]) 
 				break;
-				result.append(first[i]);
-			
-			
+				result.append(first[i]);	
 		}
 		
 		return result.toString();
