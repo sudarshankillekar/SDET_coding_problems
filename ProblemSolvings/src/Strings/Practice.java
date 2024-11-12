@@ -8,7 +8,7 @@ public class Practice {
 
 	public static void main(String[] args) {
 	
-		String demo  =  "Sudarshan earns one lakh per month";
+		String demo  =  "Sudarshang earns one lakh per month";
 		
 		String [] splited = demo.split(" ");
 		
