@@ -20,7 +20,7 @@ public class checkForSortedArray {
 				 
 		System.out.println(isSorted(n, arr));
     	
-    	
+//    	
     	
 	}
 }
