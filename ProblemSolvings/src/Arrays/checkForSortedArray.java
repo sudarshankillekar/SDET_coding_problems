@@ -11,7 +11,7 @@ public class checkForSortedArray {
         }
         // If no elements are out of order, the array is sorted
         return 1;
-////
+/////
     }
     public static void main(String[] args) {
 		
