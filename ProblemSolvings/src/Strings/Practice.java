@@ -8,27 +8,18 @@ public class Practice {
 
 	public static void main(String[] args) {
 	
-		String demo  =  "Sudarshang earns one lakh per month";
+		String str = "hey am sudarshan";
 		
-		String [] splited = demo.split(" ");
+	    String rstr = " ";
+	    char ch ;
+	    for(int i = 0 ;i <str.length();i++) {
+	    	 ch =    str.charAt(i);
+	    	 rstr = ch +  rstr;
+	    }
 		
-		ArrayList<String> result = new ArrayList<>();
-		
-		for(int i = splited.length-1;i>=0;i--) {
-			
-			result.add(splited[i]);
-			
-		}
-		
-			String finalOutput = String.join(" ",result );
-			
-			System.out.println(finalOutput.trim());
-		
-		
+	    System.out.println(rstr);
+	
 	}
-
-	
-	
 		
 	}
 	
