@@ -4,24 +4,39 @@ package Strings;
 import java.util.*;
 
 public class Practice {
-	  
-
+	 
+	
 	public static void main(String[] args) {
 	
-		String str = "hey am sudarshan";
+	 
+    String palindrome = "malayalam";
+    
+    int i = 0;
+    int j = palindrome.length()-1;
+    int flag  = 0;
+    
+    while(i<j && flag == 0) {
+    	if(palindrome.charAt(i)!=palindrome.charAt(j)) {
+    		flag =1;
+    		break;
+    	}
+    	i++;
+    	j--;
+    }
+    
+	if(flag == 1) {
+		System.out.println("is not palindrome");
+	}else {
+		System.out.println("is palindrome");
+	}
 		
-	    String rstr = " ";
-	    char ch ;
-	    for(int i = 0 ;i <str.length();i++) {
-	    	 ch =    str.charAt(i);
-	    	 rstr = ch +  rstr;
-	    }
-		
-	    System.out.println(rstr);
 	
-	}
+        
 		
-	}
+		
+	}	
+		}	
+	
 	
 	
 	
