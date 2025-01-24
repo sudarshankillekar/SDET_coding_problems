@@ -8,30 +8,30 @@ public class Practice {
 	
 	public static void main(String[] args) {
 	
-	int arr [] = {12,21,23,45,22,98};
+     String text = "My name is sudarshan and sudarshan is very inteligent";
 	
-	int max = Integer.MIN_VALUE;
-	int secmax = Integer.MIN_VALUE;
-	
-	for(int i = 0;i<arr.length;i++) {
-		
-		if(arr[i]>max);
- 		max = arr[i];
-	}
-	  
-	System.out.println(max);
+     String test [] = text.split(" ");
      
-	for(int i = 0 ;i<arr.length;i++) {
-		if(arr[i]<max && arr[i]>secmax) {
-			secmax = arr[i];
-		}
-	}
-		System.out.println(secmax);
+     HashMap<String, Integer> map = new HashMap<>();
+     
+     for(String Text:test) {
+    	 
+    	 if(map.containsKey(Text)){
+    		 map.put(Text, map.get(Text)+1);	 
+    	 }else {
+    		 map.put(text, 1);
+    	 }
+    	 
+     }
+     
 		
-	}	
+     for(String result:map.keySet()) {
+    	 System.out.println(result +" "+ map.get(result));
+     }
+		
 		}	
 	
-	
+}
 	
 	
 
