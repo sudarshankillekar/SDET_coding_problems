@@ -2,44 +2,34 @@ package Strings;
 
 public class reverseAnStringBypreservingSpace {
 
-	public static void main(String[] args) {
-	
-	String word = "i love my india";
-	
-	//a idni ym
-	
-	char [] c1 = word.toCharArray();
-	char [] c2 = new char[c1.length];
-	
-	for(int i = 0 ;i<c1.length;i++) {
+	String name = "my name is sudarshan";
 		
-		if(c1[i] == ' ') {
-			
-			c2[i] = ' ';
-			
+		int start = 0;
+		int end = name.length()-1;
+		
+	   char chararray [] = name.toCharArray();
+		
+	   while(start<end) {
+		   
+		   if(chararray[start]==' ') {
+			   start++;
+			   continue;
+		   }
+		   else if(chararray[end]== ' ') {
+		        end--;
+		        continue;
 		}
+		   else {
+			   char temp = chararray[start];
+			   chararray[start]  = chararray[end];
+			   chararray[end] = temp;
+			   start++;
+			   end--;
+		   }
+	   }
 		
-	}
-	
-	
-	int j = c2.length-1;
-	
-	for(int i = 0 ;i<c1.length;i++) {
+		System.out.println(new String(chararray));
 		
-		if(c1[i]!= ' ') {
-			
-			while(c2[j] == ' ') {
-			j--;
-			}
-			c2[j]=c1[i];
-			j--;
-		}
-		
-	
-	}
-	
-		System.out.println(String.valueOf(c2));
-
 	}
 
 }
