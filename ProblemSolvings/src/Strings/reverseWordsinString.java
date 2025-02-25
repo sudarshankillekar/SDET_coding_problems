@@ -4,22 +4,27 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class reverseWordsinString {
- //3  
-//Alternate method	
-	
-//	String str =  " sudarshan is name my ";
-//	   String [] splitedString = str.split(" ");
-//	   List<String> reversedlist = new ArrayList<>();
-//		for( int i=splitedString.length-1;i >= 0;i--) {
-//			reversedlist.add(splitedString[i]);
-//	        
-//		}
-//		
-//		
-//		  String reversedString = String.join(" ", reversedlist);
-//	        System.out.println(reversedString.trim());
-//		
-// }
+String test = "Hey man whats up";
+		
+		String test1[] =  test.split(" ");
+		
+
+        int start = 0;
+        int end = test1.length-1;
+        while(start<end) {
+        	
+        	String temp = test1[start];
+        	test1[start] = test1[end];
+        	test1[end] = temp;
+         	start++;
+        	end--;
+        }
+        
+        String reversedStringe = String.join(" ",test1);
+        
+        System.out.println(reversedStringe);
+        
+        }
 	
 	
 	
