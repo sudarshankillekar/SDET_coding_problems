@@ -1,0 +1,6 @@
+String query = "INSERT INTO ESCROW_ADMIN.BOSS_TASK (BOSS_TASK_ID, BOSS_WORKFLOW_ID, TASK_NAME, TASK_STATUS, ASSIGNEE) " +
+               "VALUES ('" + boss_TASK_Pojo.getBOSS_TASK_ID() + "', '" +
+                            boss_TASK_Pojo.getBOSS_WORKFLOW_ID() + "', '" +
+                            boss_TASK_Pojo.getTASK_NAME() + "', '" +
+                            boss_TASK_Pojo.getTASK_STATUS() + "', '" +
+                            boss_TASK_Pojo.getASSIGNEE() + "')";
