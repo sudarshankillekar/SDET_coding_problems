@@ -4,21 +4,21 @@ public class ArmStrongNumber {
 
 	public static void main(String[] args) {
 		//
-		int n = 150;
-		int temp = n;
-		int rem , sum = 0;
-		
-		while (n>0) {			
-			rem = n%10;
-			sum = (rem*rem*rem)+sum;
-			n = n/10;			
+		int number = 153;
+		int original = number;
+		int sum = 0;
+
+		while (number > 0) {
+		    int digit = number % 10;       // Get the last digit
+		    sum = sum + (digit * digit * digit);
+		    number = number / 10;           // Remove the last digit
 		}
-		
-		if(temp == sum) {
-			System.out.println("is an armstrong number");
+
+		if (sum == original) {
+		    System.out.println("Armstrong number");
+		} else {
+		    System.out.println("Not an Armstrong number");
 		}
-		else
-			System.out.println("is not an armstrong number");
 	}
 //
 }

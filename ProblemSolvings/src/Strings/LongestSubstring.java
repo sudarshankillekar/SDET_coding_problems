@@ -4,34 +4,30 @@ import java.util.*;
 public class LongestSubstring {
 
 	 public static void main(String[] args) {
-	        String s = "abccrrkarrlmmn";
-	        System.out.println(lengthOfTheLongestSubstring(s));
-	    }
+		   String text = "abcabcbb";
+	        int longest = 0;
 
-	    public static  String lengthOfTheLongestSubstring(String s) {
-	        HashMap<Character, Integer> map = new HashMap<>();
+	        for (int start = 0; start < text.length(); start++) {
+	            String current = "";
 
-	        int start = 0;
-	        int maxLen = 0;
-	        int maxStart = 0;
-	        int maxEnd = 0;
+	            for (int end = start; end < text.length(); end++) {
+	                char ch = text.charAt(end);
 
-	        for (int end = 0; end < s.length(); end++) {
-	            char c = s.charAt(end);
-	            if (map.containsKey(c)) {
-	                if (start <= map.get(c)) {
-	                    start = map.get(c) + 1;
+	                if (current.contains(String.valueOf(ch))) {
+	                    break; // repeated character
+	                }
+
+	                current += ch;
+
+	                if (current.length() > longest) {
+	                    longest = current.length();
 	                }
 	            }
-	            map.put(c, end);
-
-	            if (end - start + 1 >= maxLen) {
-	                maxLen = end - start + 1;
-	                maxStart = start;
-	                maxEnd = end;
-	               // //test 
-	            }
 	        }
-	        return "Length: " + maxLen + ", Substring: " + s.substring(maxStart, maxEnd + 1);
+
+	        System.out.println(longest); // 3 ("abc")
+	    } 
 	    }
-}
+	 
+	 
+

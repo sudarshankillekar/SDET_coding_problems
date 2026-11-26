@@ -21,6 +21,8 @@ public class palindrome {
 		i++;
 		j--;
 	}
+	
+
 	if(flag ==0)
 	System.out.println("palindrome");
 	else

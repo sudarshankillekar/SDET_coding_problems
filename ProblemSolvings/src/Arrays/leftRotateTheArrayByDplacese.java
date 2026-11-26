@@ -6,8 +6,8 @@ public class leftRotateTheArrayByDplacese {
 
 	 public static void main(String[] args) {
 		    
-	        int[] nums = {1, 2, 3, 4, 5, 6};
-	        int k = 2;
+	        int[] nums = {1,2,3,4,5,6,7};
+	        int k = 3;
 	        
 	        System.out.println("Original array: ");
 	        printArray(nums);

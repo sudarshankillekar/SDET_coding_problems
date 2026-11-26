@@ -8,21 +8,34 @@ import java.util.HashMap;
 public class TwoSum {
 
 	public static void main(String[] args) {
-		int[] nums ={1,2,3,4};
-        System.out.println(Arrays.toString(twoSum(nums,5)));	
-	}
+	
+		int[] arr = {2, 7, 11, 15};
+		int target = 9;
 		
-	public static int[] twoSum(int [] nums,int target) {		
-	HashMap <Integer, Integer> hm = new HashMap<Integer, Integer>();
-	for (int i = 0; i<nums.length;i++) {
-	     int required_Num = target - nums[i];
-	     if (hm.containsKey(required_Num)) 
-	     {
-	    	 int[] arr = {hm.get(required_Num),i};
-	    	 return arr;
-	    	 }
-	     hm.put(nums[i], i);
-	     }
-	    return null;
-	}		
+		for(int i = 0;i<arr.length;i++) {
+			for(int j = i+1;j<arr.length;j++ ) {
+				if(arr[i]+arr[j]==target) {
+					System.out.println("["+i+","+j+"]");
+				}
+			}
+		}
+		
+		
+		
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 }

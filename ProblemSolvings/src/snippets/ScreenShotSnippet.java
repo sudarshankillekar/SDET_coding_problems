@@ -7,6 +7,8 @@ public class ScreenShotSnippet {
      //	TakesScreenShot screenshot = (TakesScreenShot)wd;
      //	File f = screenshot.getScreenshot(OutputType.FILE);
      //	File screenShotFile = new File(System.getProperty("user.dir")+"//screenshots//"+FileName);
-     //   FileUtils.copyFile(f,screenShotFile);		
+     //   FileUtils.copyFile(f,screenShotFile);	
+		
+		 
 	}
 }

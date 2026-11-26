@@ -22,7 +22,6 @@ public class reverseArray {
 	            start++; 
 	            end--; 
 	        } 
-	        
 	        System.out.println(Arrays.toString(arr));
 	    } 
 

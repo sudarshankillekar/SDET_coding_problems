@@ -3,7 +3,7 @@ package Maths;
 public class print1to100 {
 
 	public static void print100(int n ) {
-		if(n>101) {
+		if(n>100) {
 		return;
 		}
 		System.out.println(n);
